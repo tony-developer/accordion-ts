@@ -6,6 +6,13 @@ import {UncontrolledAccordion} from "./components/UncontrolledAccordion/Uncontro
 import {UncontrolledRating} from "./components/UncontrolledRating/UncontrolledRating";
 import {OnOff} from "./components/OnOff/OnOff";
 import {UncontrolledOnOff} from "./components/UncontrolledOnOff/UncontrolledOnOff";
+import {
+    ControlledCheckBox,
+    ControlledInput, ControlledSelect,
+    GetValueUncontrolledInputByButtonPress,
+    TrackValueUncontrolledInput,
+    UncontrolledInput
+} from "./stories/Input";
 
 
 function App() {
@@ -31,6 +38,13 @@ function App() {
                        onChange={() => {setAccordionCollapsed(!accordionCollapsed)}}/>
             {/*<UncontrolledAccordion titleValue ={'Users'}/>*/}
             <UncontrolledRating/>
+
+            {/*<UncontrolledInput/>*/}
+            {/*<TrackValueUncontrolledInput/>*/}
+            {/*<GetValueUncontrolledInputByButtonPress/>*/}
+            {/*<ControlledInput/>*/}
+            {/*<ControlledCheckBox/>*/}
+            <ControlledSelect/>
         </div>
     );
 }
