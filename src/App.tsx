@@ -13,6 +13,8 @@ import {
     TrackValueUncontrolledInput,
     UncontrolledInput
 } from "./stories/Input";
+import {MenuCollapsedMode, UserCollapsedMode} from "./stories/Accordeon2";
+import {Select} from "./components/select/select";
 
 
 function App() {
@@ -33,9 +35,9 @@ function App() {
             {/*<UncontrolledAccordion titleValue ={'Manu'}/>*/}
             <Rating value={ratingValue}
                     onClick={setRatingValue}/>
-            <Accordion titleValue={"Menu"}
-                       collapsed={accordionCollapsed}
-                       onChange={() => {setAccordionCollapsed(!accordionCollapsed)}}/>
+            {/*<Accordion titleValue={"Menu"}*/}
+            {/*           collapsed={accordionCollapsed}*/}
+            {/*           onChange={() => {setAccordionCollapsed(!accordionCollapsed)}}/>*/}
             {/*<UncontrolledAccordion titleValue ={'Users'}/>*/}
             <UncontrolledRating/>
 
@@ -45,6 +47,8 @@ function App() {
             {/*<ControlledInput/>*/}
             {/*<ControlledCheckBox/>*/}
             <ControlledSelect/>
+            <MenuCollapsedMode/>
+            <UserCollapsedMode/>
         </div>
     );
 }
